@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block head %} 
+
+
+
+{% endblock %}
+
+
+{% block body %} 
+<div>
+    
+    <h1>Task Maker Web</h1>
+    </h4>There are no task added! Add your task.</h4>
+
+    <br>
+    <form action='/update/{{task.id}}' method='POST'>
+        <input type="text" name='content' id='content' value="{{task.content}}">
+        <input type='submit' value='Update'>
+        
+
+</div>
+
+
+{% endblock %}
